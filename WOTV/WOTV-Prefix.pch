@@ -1,0 +1,41 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#endif
+#import "NetEngine.h"
+#import "CommonViewController.h"
+#define SocketDomain   @"192.168.8.2"
+#define SocketExtraDomain   @"192.168.8.2"
+#define SocketPort 6667
+#define SocketExtraPort 6666
+#define SocketTimeout 1
+
+#define CLIENTTYPE 0x04 //Remote Control
+
+#define COMMANDID 0x10 //pushKey
+
+#define KEYVALUEUP 0x01  //上
+#define KEYVALUEDOWN 0x02  //下
+#define KEYVALUELEFT 0x03  //左
+#define KEYVALUERIGHT 0x04  //右
+#define KEYVALUECONFIRM 0x05  //确认
+#define KEYVALUEHOME 0x06  //主页
+#define KEYVALUEMENU 0x07  //菜单
+#define KEYVALUEBACK 0x08  //返回
+
+#define KEYSTATUSDOWN 0x01 //按下
+#define KEYSTATUSREPEAT 0x02 //重复
+#define KEYSTATUSUP 0x03 //弹起
