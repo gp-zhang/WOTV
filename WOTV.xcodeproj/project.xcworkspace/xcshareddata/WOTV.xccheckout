@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DEEAED19-3CAE-4E43-ABAF-339756D28156</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WOTV</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B9EED38C-9C87-4505-A0F2-DC72ABE24A46</key>
+		<string>https://github.com/zgp1027/WOTV.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WOTV.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B9EED38C-9C87-4505-A0F2-DC72ABE24A46</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zgp1027/WOTV.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B9EED38C-9C87-4505-A0F2-DC72ABE24A46</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B9EED38C-9C87-4505-A0F2-DC72ABE24A46</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WOTV</string>
+		</dict>
+	</array>
+</dict>
+</plist>

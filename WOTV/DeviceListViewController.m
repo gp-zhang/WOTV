@@ -10,10 +10,11 @@
 #import "UPnPDB.h"
 #import "UPnPManager.h"
 #import "mURLConnection.h"
-#import "GDataXMLNode.h"
+#import "AppDelegate.h"
 @interface DeviceListViewController ()<UITableViewDelegate,UITableViewDataSource,UPnPDBObserver>
 {
-        NSMutableArray *mDevices; //BasicUPnPDevice*
+
+    NSMutableArray *mDevices; //BasicUPnPDevice*
 }
 @property (strong,nonatomic)UITableView *DeviceTable;
 -(void)UPnPDBWillUpdate:(UPnPDB*)sender;
@@ -39,14 +40,13 @@
     
     mDevices = [db rootDevices]; //BasicUPnPDevice
     
+    
     [db addObserver:(UPnPDBObserver*)self];
     
     //Optional; set User Agent
-    [[[UPnPManager GetInstance] SSDP] setUserAgentProduct:@"upnpxdemo/1.0" andOS:@"OSX"];
-    
+    [[[UPnPManager GetInstance] SSDP] setUserAgentProduct:@"upnpxdemo/1.0" andOS:@"ios"];
     
     //Search for UPnP Devices
-    [[[UPnPManager GetInstance] SSDP] searchSSDP];
     
     if (self.DeviceTable == nil) {
         self.DeviceTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)) style:UITableViewStylePlain];
@@ -54,8 +54,21 @@
         _DeviceTable.dataSource = self;
         _DeviceTable.delegate = self;
         [self.view addSubview:_DeviceTable];
+
     }
+    
+    
+    
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [[[UPnPManager GetInstance] SSDP] searchSSDP];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,15 +78,15 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
 #pragma mark - Table view data source
@@ -98,6 +111,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     
     BasicUPnPDevice *device = [mDevices objectAtIndex:indexPath.row];
@@ -152,34 +166,14 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
     BasicUPnPDevice *device = [mDevices objectAtIndex:indexPath.row];
     
-    BasicUPnPService *service = [device getServiceForType:@"urn:schemas-upnp-org:service:tvcontrol:1"];
     
-    NSURL *url = [NSURL URLWithString:@"http://192.168.8.136:49152"];
-    
-    NSURL *actionURL = [NSURL URLWithString:@"/upnp/control/tvcontrol1" relativeToURL:url];
-    
-    NSLog(@"%@",actionURL);
-    NSDictionary *parameters = nil;
-    NSString *soapAction = @"home";
-    NSString *upnpNameSpace = @"urn:schemas-upnp-org:service:ContentDirectory:1";
-    NSString *responseGroupTag = [NSString stringWithFormat:@"%@Response", soapAction];
-    
-    mURLConnection *murl = [[mURLConnection alloc]init];
-    [murl SoapActionWithUrl:actionURL HttpMethod:@"POST" Action:soapAction Parameters:parameters NameSpace:upnpNameSpace Complete:^(id responseData) {
-        NSLog(@"%@",responseData);
-        NSError *error = nil;
-        GDataXMLDocument *doc = [[GDataXMLDocument alloc]initWithXMLString:responseData options:0 error:&error] ;
-        if (error) {
-            NSLog(@"error--> %@",error);
-        }
-        NSArray *array = [doc nodesForXPath:[NSString stringWithFormat:@"//%@",responseGroupTag] error:nil];
-        NSLog(@"%@",array);
-        
-    } onError:^(id responseCode, id error) {
-        
-    }];
+    AppDelegate *appdelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+    appdelegate.mDevice = device;
+
     
 }
 

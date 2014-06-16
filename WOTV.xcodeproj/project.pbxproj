@@ -85,6 +85,16 @@
 		A63C812D194BF85900BFAB3A /* CircleControll.m in Sources */ = {isa = PBXBuildFile; fileRef = A63C812C194BF85900BFAB3A /* CircleControll.m */; };
 		A63C8131194BF99600BFAB3A /* ControllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63C812F194BF99600BFAB3A /* ControllViewController.m */; };
 		A63C8132194BF99600BFAB3A /* ControllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63C8130194BF99600BFAB3A /* ControllViewController.xib */; };
+		A68F69D2194EDB74008E2EA2 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69C8194EDB74008E2EA2 /* EGORefreshTableHeaderView.m */; };
+		A68F69D3194EDB74008E2EA2 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69CA194EDB74008E2EA2 /* blackArrow.png */; };
+		A68F69D4194EDB74008E2EA2 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69CB194EDB74008E2EA2 /* blackArrow@2x.png */; };
+		A68F69D5194EDB74008E2EA2 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69CC194EDB74008E2EA2 /* blueArrow.png */; };
+		A68F69D6194EDB74008E2EA2 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69CD194EDB74008E2EA2 /* blueArrow@2x.png */; };
+		A68F69D7194EDB74008E2EA2 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69CE194EDB74008E2EA2 /* grayArrow.png */; };
+		A68F69D8194EDB74008E2EA2 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69CF194EDB74008E2EA2 /* grayArrow@2x.png */; };
+		A68F69D9194EDB74008E2EA2 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69D0194EDB74008E2EA2 /* whiteArrow.png */; };
+		A68F69DA194EDB74008E2EA2 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69D1194EDB74008E2EA2 /* whiteArrow@2x.png */; };
+		A68F69E0194EE199008E2EA2 /* IptvChannelMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69DF194EE199008E2EA2 /* IptvChannelMode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +316,18 @@
 		A63C812E194BF99600BFAB3A /* ControllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllViewController.h; sourceTree = "<group>"; };
 		A63C812F194BF99600BFAB3A /* ControllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllViewController.m; sourceTree = "<group>"; };
 		A63C8130194BF99600BFAB3A /* ControllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControllViewController.xib; sourceTree = "<group>"; };
+		A68F69C7194EDB74008E2EA2 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		A68F69C8194EDB74008E2EA2 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		A68F69CA194EDB74008E2EA2 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		A68F69CB194EDB74008E2EA2 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		A68F69CC194EDB74008E2EA2 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		A68F69CD194EDB74008E2EA2 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		A68F69CE194EDB74008E2EA2 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		A68F69CF194EDB74008E2EA2 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		A68F69D0194EDB74008E2EA2 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		A68F69D1194EDB74008E2EA2 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		A68F69DE194EE199008E2EA2 /* IptvChannelMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IptvChannelMode.h; sourceTree = "<group>"; };
+		A68F69DF194EE199008E2EA2 /* IptvChannelMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IptvChannelMode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +464,7 @@
 		A63C8021194AD37900BFAB3A /* otherClass */ = {
 			isa = PBXGroup;
 			children = (
+				A68F69C4194EDB74008E2EA2 /* EGOTableViewPullRefresh */,
 				A63C812B194BF85900BFAB3A /* CircleControll.h */,
 				A63C812C194BF85900BFAB3A /* CircleControll.m */,
 				A63C8128194BF83200BFAB3A /* MSocket.h */,
@@ -497,6 +520,8 @@
 		A63C8028194AD45800BFAB3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A68F69DE194EE199008E2EA2 /* IptvChannelMode.h */,
+				A68F69DF194EE199008E2EA2 /* IptvChannelMode.m */,
 				A63C8032194AF0D800BFAB3A /* cell */,
 			);
 			name = Model;
@@ -766,6 +791,47 @@
 			path = AsyncSocket;
 			sourceTree = "<group>";
 		};
+		A68F69C4194EDB74008E2EA2 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A68F69C5194EDB74008E2EA2 /* Classes */,
+				A68F69C9194EDB74008E2EA2 /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		A68F69C5194EDB74008E2EA2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A68F69C6194EDB74008E2EA2 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A68F69C6194EDB74008E2EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A68F69C7194EDB74008E2EA2 /* EGORefreshTableHeaderView.h */,
+				A68F69C8194EDB74008E2EA2 /* EGORefreshTableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A68F69C9194EDB74008E2EA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A68F69CA194EDB74008E2EA2 /* blackArrow.png */,
+				A68F69CB194EDB74008E2EA2 /* blackArrow@2x.png */,
+				A68F69CC194EDB74008E2EA2 /* blueArrow.png */,
+				A68F69CD194EDB74008E2EA2 /* blueArrow@2x.png */,
+				A68F69CE194EDB74008E2EA2 /* grayArrow.png */,
+				A68F69CF194EDB74008E2EA2 /* grayArrow@2x.png */,
+				A68F69D0194EDB74008E2EA2 /* whiteArrow.png */,
+				A68F69D1194EDB74008E2EA2 /* whiteArrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -842,6 +908,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A63C801D194AD37100BFAB3A /* searchBarIcon.png in Resources */,
+				A68F69D3194EDB74008E2EA2 /* blackArrow.png in Resources */,
+				A68F69D4194EDB74008E2EA2 /* blackArrow@2x.png in Resources */,
 				A63C8105194BF4AC00BFAB3A /* SVProgressHUD.bundle in Resources */,
 				A63C801F194AD37100BFAB3A /* searchTextBG.png in Resources */,
 				A63C801E194AD37100BFAB3A /* searchBarIcon@2x.png in Resources */,
@@ -849,7 +917,13 @@
 				A63C8132194BF99600BFAB3A /* ControllViewController.xib in Resources */,
 				A63C8020194AD37100BFAB3A /* user.png in Resources */,
 				A63C7FF2194AD2F100BFAB3A /* Images.xcassets in Resources */,
+				A68F69D6194EDB74008E2EA2 /* blueArrow@2x.png in Resources */,
+				A68F69D8194EDB74008E2EA2 /* grayArrow@2x.png in Resources */,
+				A68F69D5194EDB74008E2EA2 /* blueArrow.png in Resources */,
+				A68F69D9194EDB74008E2EA2 /* whiteArrow.png in Resources */,
+				A68F69D7194EDB74008E2EA2 /* grayArrow.png in Resources */,
 				A63C8083194BF14300BFAB3A /* AllCustomCell.xib in Resources */,
+				A68F69DA194EDB74008E2EA2 /* whiteArrow@2x.png in Resources */,
 				A63C801C194AD37100BFAB3A /* searchBarBG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,6 +952,7 @@
 				A63C801A194AD37100BFAB3A /* GHRevealViewController.m in Sources */,
 				A63C80F3194BF4AC00BFAB3A /* NetEngine.m in Sources */,
 				A63C8100194BF4AC00BFAB3A /* UIButton+WebCache.m in Sources */,
+				A68F69D2194EDB74008E2EA2 /* EGORefreshTableHeaderView.m in Sources */,
 				A63C80EB194BF4AC00BFAB3A /* NSData+MKBase64.m in Sources */,
 				A63C812D194BF85900BFAB3A /* CircleControll.m in Sources */,
 				A63C80EE194BF4AC00BFAB3A /* NSString+MKNetworkKitAdditions.m in Sources */,
@@ -901,6 +976,7 @@
 				A63C802B194AD48300BFAB3A /* GHMenuViewController.m in Sources */,
 				A63C8123194BF80E00BFAB3A /* GCDAsyncUdpSocket.m in Sources */,
 				A63C80E3194BF4AC00BFAB3A /* NSString+Hashing.m in Sources */,
+				A68F69E0194EE199008E2EA2 /* IptvChannelMode.m in Sources */,
 				A63C80E2194BF4AC00BFAB3A /* GDataXMLNode.m in Sources */,
 				A63C8086194BF3A100BFAB3A /* DeviceListViewController.m in Sources */,
 				A63C7FF0194AD2F100BFAB3A /* AppDelegate.m in Sources */,
@@ -1147,6 +1223,7 @@
 				A63C800A194AD2F100BFAB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A63C800B194AD2F100BFAB3A /* Build configuration list for PBXNativeTarget "WOTVTests" */ = {
 			isa = XCConfigurationList;
@@ -1155,6 +1232,7 @@
 				A63C800D194AD2F100BFAB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

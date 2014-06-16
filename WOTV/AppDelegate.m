@@ -16,12 +16,21 @@
 #import "MNavigationController.h"
 #import "DeviceListViewController.h"
 #import "ControllViewController.h"
+
+#import "UPnPDB.h"
+#import "UPnPManager.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) GHRevealViewController *revealController;
 @property (nonatomic, strong) GHMenuViewController *menuController;
 @property (nonatomic, strong) UIView *headView;
 @end
 @implementation AppDelegate
+@synthesize mDevice;
+
++ (id)share
+{
+    return [[UIApplication sharedApplication]delegate];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -126,6 +135,8 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
