@@ -24,6 +24,9 @@
 	}
 	[body appendFormat:@"</u:%@>", soapaction];
 	[body appendFormat:@"</s:Body></s:Envelope>"];
+    
+    NSLog(@"%@",body);
+    
     int	len = [body length];
     
     if (self.HttpRequest == nil) {

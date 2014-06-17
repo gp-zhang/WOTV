@@ -36,39 +36,57 @@
 {
     [super viewDidLoad];
     
-    UPnPDB* db = [[UPnPManager GetInstance] DB];
     
-    mDevices = [db rootDevices]; //BasicUPnPDevice
-    
-    
-    [db addObserver:(UPnPDBObserver*)self];
-    
-    //Optional; set User Agent
-    [[[UPnPManager GetInstance] SSDP] setUserAgentProduct:@"upnpxdemo/1.0" andOS:@"ios"];
-    
-    //Search for UPnP Devices
-    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        UPnPDB* db = [[UPnPManager GetInstance] DB];
+        
+        mDevices = [db rootDevices]; //BasicUPnPDevice
+        
+        
+        [db addObserver:(UPnPDBObserver*)self];
+        
+        //Optional; set User Agent
+        [[[UPnPManager GetInstance] SSDP] setUserAgentProduct:@"upnpxdemo/1.0" andOS:@"ios"];
+        
+        //Search for UPnP Devices
+        
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[[UPnPManager GetInstance] SSDP] searchSSDP];
+            
+        });
+        
+    });
     if (self.DeviceTable == nil) {
         self.DeviceTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)) style:UITableViewStylePlain];
         _DeviceTable.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         _DeviceTable.dataSource = self;
         _DeviceTable.delegate = self;
+        _DeviceTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:_DeviceTable];
-
+        
     }
-    
     
     
     
     // Do any additional setup after loading the view.
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
     
     [[[UPnPManager GetInstance] SSDP] searchSSDP];
+
     
+
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning

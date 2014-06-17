@@ -16,7 +16,7 @@
 #import "MNavigationController.h"
 #import "DeviceListViewController.h"
 #import "ControllViewController.h"
-
+#import "OndemandViewController.h"
 #import "UPnPDB.h"
 #import "UPnPManager.h"
 @interface AppDelegate ()
@@ -62,7 +62,7 @@
                              
                              @[
                                  [[MNavigationController alloc] initWithRootViewController:[[LiveViewController alloc] initWithTitle:@"直播" withRevealBlock:revealBlock]],
-                                 [[MNavigationController alloc] initWithRootViewController:[[CommonViewController alloc] initWithTitle:@"在线影视" withRevealBlock:revealBlock]],
+                                 [[MNavigationController alloc] initWithRootViewController:[[OndemandViewController alloc] initWithTitle:@"在线影视" withRevealBlock:revealBlock]],
                                  [[MNavigationController alloc] initWithRootViewController:[[CommonViewController alloc] initWithTitle:@"影视搜索" withRevealBlock:revealBlock]],
                                  [[MNavigationController alloc] initWithRootViewController:[[CommonViewController alloc] initWithTitle:@"我的影视" withRevealBlock:revealBlock]],
                                  [[MNavigationController alloc] initWithRootViewController:[[CommonViewController alloc] initWithTitle:@"本机资源" withRevealBlock:revealBlock]]

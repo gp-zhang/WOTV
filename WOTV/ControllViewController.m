@@ -30,15 +30,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
-    }
-    return self;
-}
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
         [[NSNotificationCenter defaultCenter] addObserver:self
 												 selector:@selector(keyboardWillShow:)
 													 name:UIKeyboardWillShowNotification
@@ -50,6 +41,15 @@
 												   object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(upBtnPressed:)
                                                      name:@"upBtnPressed" object:nil];
+    }
+    return self;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+
     }
     return self;
 }

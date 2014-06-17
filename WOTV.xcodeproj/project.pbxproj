@@ -95,6 +95,14 @@
 		A68F69D9194EDB74008E2EA2 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69D0194EDB74008E2EA2 /* whiteArrow.png */; };
 		A68F69DA194EDB74008E2EA2 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68F69D1194EDB74008E2EA2 /* whiteArrow@2x.png */; };
 		A68F69E0194EE199008E2EA2 /* IptvChannelMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69DF194EE199008E2EA2 /* IptvChannelMode.m */; };
+		A68F69E3194F2764008E2EA2 /* OndemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69E2194F2764008E2EA2 /* OndemandViewController.m */; };
+		A68F69E5194F314A008E2EA2 /* OndemandCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F69E4194F314A008E2EA2 /* OndemandCollectionCell.xib */; };
+		A68F69F319501639008E2EA2 /* AvPlayerPlaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69EC19501639008E2EA2 /* AvPlayerPlaybackView.m */; };
+		A68F69F419501639008E2EA2 /* AvplayerPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69EE19501639008E2EA2 /* AvplayerPlaybackViewController.m */; };
+		A68F69F519501639008E2EA2 /* AvplayerPlaybackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F69EF19501639008E2EA2 /* AvplayerPlaybackViewController.xib */; };
+		A68F69F619501639008E2EA2 /* AVPlayerMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69F119501639008E2EA2 /* AVPlayerMetadataViewController.m */; };
+		A68F69F719501639008E2EA2 /* AVPlayerMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F69F219501639008E2EA2 /* AVPlayerMetadataViewController.xib */; };
+		A68F69FA195016E8008E2EA2 /* LiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F69F9195016E8008E2EA2 /* LiveDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -328,6 +336,19 @@
 		A68F69D1194EDB74008E2EA2 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		A68F69DE194EE199008E2EA2 /* IptvChannelMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IptvChannelMode.h; sourceTree = "<group>"; };
 		A68F69DF194EE199008E2EA2 /* IptvChannelMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IptvChannelMode.m; sourceTree = "<group>"; };
+		A68F69E1194F2764008E2EA2 /* OndemandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OndemandViewController.h; sourceTree = "<group>"; };
+		A68F69E2194F2764008E2EA2 /* OndemandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OndemandViewController.m; sourceTree = "<group>"; };
+		A68F69E4194F314A008E2EA2 /* OndemandCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OndemandCollectionCell.xib; sourceTree = "<group>"; };
+		A68F69EB19501639008E2EA2 /* AvPlayerPlaybackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvPlayerPlaybackView.h; sourceTree = "<group>"; };
+		A68F69EC19501639008E2EA2 /* AvPlayerPlaybackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvPlayerPlaybackView.m; sourceTree = "<group>"; };
+		A68F69ED19501639008E2EA2 /* AvplayerPlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvplayerPlaybackViewController.h; sourceTree = "<group>"; };
+		A68F69EE19501639008E2EA2 /* AvplayerPlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvplayerPlaybackViewController.m; sourceTree = "<group>"; };
+		A68F69EF19501639008E2EA2 /* AvplayerPlaybackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvplayerPlaybackViewController.xib; sourceTree = "<group>"; };
+		A68F69F019501639008E2EA2 /* AVPlayerMetadataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerMetadataViewController.h; sourceTree = "<group>"; };
+		A68F69F119501639008E2EA2 /* AVPlayerMetadataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerMetadataViewController.m; sourceTree = "<group>"; };
+		A68F69F219501639008E2EA2 /* AVPlayerMetadataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerMetadataViewController.xib; sourceTree = "<group>"; };
+		A68F69F8195016E8008E2EA2 /* LiveDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveDetailViewController.h; sourceTree = "<group>"; };
+		A68F69F9195016E8008E2EA2 /* LiveDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +485,7 @@
 		A63C8021194AD37900BFAB3A /* otherClass */ = {
 			isa = PBXGroup;
 			children = (
+				A68F69EA19501633008E2EA2 /* Avplayer */,
 				A68F69C4194EDB74008E2EA2 /* EGOTableViewPullRefresh */,
 				A63C812B194BF85900BFAB3A /* CircleControll.h */,
 				A63C812C194BF85900BFAB3A /* CircleControll.m */,
@@ -505,6 +527,10 @@
 				A63C807D194BEC8F00BFAB3A /* LiveViewController.m */,
 				A63C8084194BF3A100BFAB3A /* DeviceListViewController.h */,
 				A63C8085194BF3A100BFAB3A /* DeviceListViewController.m */,
+				A68F69E1194F2764008E2EA2 /* OndemandViewController.h */,
+				A68F69E2194F2764008E2EA2 /* OndemandViewController.m */,
+				A68F69F8195016E8008E2EA2 /* LiveDetailViewController.h */,
+				A68F69F9195016E8008E2EA2 /* LiveDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -513,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				A63C8082194BF14300BFAB3A /* AllCustomCell.xib */,
+				A68F69E4194F314A008E2EA2 /* OndemandCollectionCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -832,6 +859,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A68F69EA19501633008E2EA2 /* Avplayer */ = {
+			isa = PBXGroup;
+			children = (
+				A68F69EB19501639008E2EA2 /* AvPlayerPlaybackView.h */,
+				A68F69EC19501639008E2EA2 /* AvPlayerPlaybackView.m */,
+				A68F69ED19501639008E2EA2 /* AvplayerPlaybackViewController.h */,
+				A68F69EE19501639008E2EA2 /* AvplayerPlaybackViewController.m */,
+				A68F69EF19501639008E2EA2 /* AvplayerPlaybackViewController.xib */,
+				A68F69F019501639008E2EA2 /* AVPlayerMetadataViewController.h */,
+				A68F69F119501639008E2EA2 /* AVPlayerMetadataViewController.m */,
+				A68F69F219501639008E2EA2 /* AVPlayerMetadataViewController.xib */,
+			);
+			path = Avplayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -915,6 +957,7 @@
 				A63C801E194AD37100BFAB3A /* searchBarIcon@2x.png in Resources */,
 				A63C7FEA194AD2F100BFAB3A /* InfoPlist.strings in Resources */,
 				A63C8132194BF99600BFAB3A /* ControllViewController.xib in Resources */,
+				A68F69E5194F314A008E2EA2 /* OndemandCollectionCell.xib in Resources */,
 				A63C8020194AD37100BFAB3A /* user.png in Resources */,
 				A63C7FF2194AD2F100BFAB3A /* Images.xcassets in Resources */,
 				A68F69D6194EDB74008E2EA2 /* blueArrow@2x.png in Resources */,
@@ -923,6 +966,8 @@
 				A68F69D9194EDB74008E2EA2 /* whiteArrow.png in Resources */,
 				A68F69D7194EDB74008E2EA2 /* grayArrow.png in Resources */,
 				A63C8083194BF14300BFAB3A /* AllCustomCell.xib in Resources */,
+				A68F69F719501639008E2EA2 /* AVPlayerMetadataViewController.xib in Resources */,
+				A68F69F519501639008E2EA2 /* AvplayerPlaybackViewController.xib in Resources */,
 				A68F69DA194EDB74008E2EA2 /* whiteArrow@2x.png in Resources */,
 				A63C801C194AD37100BFAB3A /* searchBarBG.png in Resources */,
 			);
@@ -958,6 +1003,7 @@
 				A63C80EE194BF4AC00BFAB3A /* NSString+MKNetworkKitAdditions.m in Sources */,
 				A63C8031194AD71000BFAB3A /* GHMenuCell.m in Sources */,
 				A63C8101194BF4AC00BFAB3A /* UIImage+GIF.m in Sources */,
+				A68F69F319501639008E2EA2 /* AvPlayerPlaybackView.m in Sources */,
 				A63C8122194BF80E00BFAB3A /* GCDAsyncSocket.m in Sources */,
 				A63C80FF194BF4AC00BFAB3A /* SDWebImagePrefetcher.m in Sources */,
 				A63C80EF194BF4AC00BFAB3A /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
@@ -969,6 +1015,7 @@
 				A63C80FD194BF4AC00BFAB3A /* SDWebImageDownloaderOperation.m in Sources */,
 				A63C8131194BF99600BFAB3A /* ControllViewController.m in Sources */,
 				A63C80FB194BF4AC00BFAB3A /* SDWebImageDecoder.m in Sources */,
+				A68F69FA195016E8008E2EA2 /* LiveDetailViewController.m in Sources */,
 				A63C80FE194BF4AC00BFAB3A /* SDWebImageManager.m in Sources */,
 				A63C80F6194BF4AC00BFAB3A /* SDDataCache.m in Sources */,
 				A63C80F2194BF4AC00BFAB3A /* MKNetworkOperation.m in Sources */,
@@ -981,6 +1028,7 @@
 				A63C8086194BF3A100BFAB3A /* DeviceListViewController.m in Sources */,
 				A63C7FF0194AD2F100BFAB3A /* AppDelegate.m in Sources */,
 				A63C811C194BF7E900BFAB3A /* UIImage+ColorAtPixel.m in Sources */,
+				A68F69F419501639008E2EA2 /* AvplayerPlaybackViewController.m in Sources */,
 				A63C80E5194BF4AC00BFAB3A /* NSString+SBJSON.m in Sources */,
 				A63C7FEC194AD2F100BFAB3A /* main.m in Sources */,
 				A63C80F7194BF4AC00BFAB3A /* MKAnnotationView+WebCache.m in Sources */,
@@ -993,6 +1041,7 @@
 				A63C80ED194BF4AC00BFAB3A /* NSDictionary+RequestEncoding.m in Sources */,
 				A63C8107194BF4AC00BFAB3A /* Utility.m in Sources */,
 				A63C8025194AD41200BFAB3A /* CommonViewController.m in Sources */,
+				A68F69E3194F2764008E2EA2 /* OndemandViewController.m in Sources */,
 				A63C8115194BF7D100BFAB3A /* KSBTextbar.m in Sources */,
 				A63C80F0194BF4AC00BFAB3A /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				A63C80F8194BF4AC00BFAB3A /* NSData+GIF.m in Sources */,
@@ -1000,6 +1049,7 @@
 				A63C8081194BEFE800BFAB3A /* MNavigationController.m in Sources */,
 				A63C811B194BF7E900BFAB3A /* R_ShapedButton.m in Sources */,
 				A63C8104194BF4AC00BFAB3A /* UIImageView+WebCache.m in Sources */,
+				A68F69F619501639008E2EA2 /* AVPlayerMetadataViewController.m in Sources */,
 				A63C80F9194BF4AC00BFAB3A /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

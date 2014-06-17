@@ -30,7 +30,7 @@
 
 #pragma mark Memory Management
 - (id)initWithTitle:(NSString *)title withRevealBlock:(RevealBlock)revealBlock {
-    if (self = [super initWithNibName:nil bundle:nil]) {
+    if (self = [self initWithNibName:nil bundle:nil]) {
 		self.title = title;
 		_revealBlock = [revealBlock copy];
 		self.navigationItem.leftBarButtonItem =
@@ -44,10 +44,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
-                                                  target:self
-                                                  action:@selector(revealSidebar)];
+
 	self.view.backgroundColor = [UIColor redColor];
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;

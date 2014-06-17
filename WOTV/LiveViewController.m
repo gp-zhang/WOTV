@@ -14,6 +14,7 @@
 #import "mURLConnection.h"
 #import "GDataXMLNode.h"
 #import "IptvChannelMode.h"
+#import "LiveDetailViewController.h"
 @interface LiveViewController ()<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate>
 {
     EGORefreshTableHeaderView *_refreshHeaderViewForLive;
@@ -118,6 +119,16 @@
     return 91;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(tableView == _mLiveTable)
+    {
+        IptvChannelMode *im= [_mLiveArray objectAtIndex:indexPath.row];
+        LiveDetailViewController *detail = [[LiveDetailViewController alloc]init];
+        detail.mChannel = im;
+        [self.navigationController pushViewController:detail animated:YES];
+    }
+}
 
 #pragma mark ScrollViewDelegate
 
@@ -221,13 +232,18 @@
             
             
         } onError:^(id responseCode, id error) {
+            DLog(@"%@",murl.HttpRequest.URL);
             
+            [self doneLoadingTableViewDataForLive];
+
         }];
         
         }
         else
         {
             [SVProgressHUD showErrorWithStatus:@"请检查所选设备是否正确!" duration:1];
+            [self performSelector:@selector(doneLoadingTableViewDataForLive) withObject:nil afterDelay:0.3];
+
         }
         
     }
